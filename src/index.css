@@ -31,3 +31,32 @@
 .animate-fade-in {
   animation: fadeIn 0.8s ease-out forwards;
 }
+
+
+.image-transparent {
+  /* Base transparency with smooth transition */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transparency levels */
+.image-transparent-10 { opacity: 0.1; }
+.image-transparent-25 { opacity: 0.25; }
+.image-transparent-50 { opacity: 0.5; }
+.image-transparent-75 { opacity: 0.75; }
+
+/* Hover effect transparencies */
+.image-transparent-hover:hover { 
+  opacity: 0.5; 
+}
+
+/* Grayscale with transparency */
+.image-transparent-grayscale {
+  filter: grayscale(100%) opacity(0.5);
+}
+
+/* Responsive transparency */
+@media (max-width: 768px) {
+  .image-transparent-responsive {
+    opacity: 0.7;
+  }
+}
